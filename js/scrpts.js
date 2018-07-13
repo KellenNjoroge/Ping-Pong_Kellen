@@ -1,26 +1,41 @@
-$(document).ready(function() {
-    $("form#myForm").submit(function(event) {
-        event.preventDefault()
-    var userNumber= parseInt (("input#userInput").val())
+//User interface logic
 
-    for (var i=1,i <= 20 i++)
-{
-    if (% 15 == 0)
+// Business end Logic
+    var numbersToBePingPonged = [];
 
-       console.log("pingPong");
+    function pingPong(number){
+        for (var i=1; i <= number; i +=) {
 
-    else if (i % 3 == )
+         if (i % 15 == 0){
+            numbersToBePingPonged.push("pingPong");
+         }
+        else if (i % 3 == 0 ) {
 
-        console.log ("ping");
-
-    else if (i % 5 == 0)
-
-         console.log("pong");
-
-    else 
-        console.log(i);
-
+             numbersToBePingPonged.push("ping");
         }
+        else if (i % 5 == 0) {
 
-    });
-});
+            numbersToBePingPonged.push("pong");
+        }
+        else {
+        numbersToBePingPonged.push(i);
+        }
+    }
+         return numbersToBePingPonged;
+    }; 
+
+    $(document).ready(function() {
+        $("form#myForm").submit(function(event) {
+            event.preventDefault();
+        var number= parseInt (("input#formNumber").val());
+        pingPong(number);
+    
+        numbersToBePingPonged.forEach(function(number){
+            $("#output").append("<li>"+ number + "<li>");
+        });
+    
+        
+        });
+    
+    });    
+

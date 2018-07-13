@@ -10,7 +10,7 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script>src=js/scripts.js</script>
+    <script>src="js/scripts.js"</script>
     <title>Document</title>
 </head>
 <body>
@@ -29,11 +29,13 @@
             </ul>
             <form id="myForm" class="form-inline">
                 <div class="form-group">
-                    <label for=:"userInput">Enter any number:</label>
-                    <input type="text" id="userInput" placeholder="Enter number here">
-                    <button type ="submit" class= "btn btn-danger">Ping-Pong!</button>
+                    <label for=:"number">Enter any number:</label>
+                    <input type="number" id="formNumber" placeholder="Enter number here">
+                    <button type ="submit" class= "btn btn-primary">Ping-Pong!</button>
                 </div>
             </form>
+            <ol id="output">
+            </ol>
              <div class "section-tab">
                 <h4>About Ping-Pong</h4>
                 <p>Created by:</p>
@@ -44,6 +46,9 @@
                 <p>Level 2 Test for:</p>                
                 <p>java</p>           
             </div>
+        </div>
+        <div class ="section.footer">
+            <h4>2018 | Kellen Njoroge</h4>
         </div>
     </div>
 </body>
