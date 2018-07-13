@@ -1,4 +1,21 @@
-.section-header{
-    padding:30px;
+.header{
+    padding: 20px;
+    border: 2px solid rgba(211, 211, 211, 0.44);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.14);
     background-color: blueviolet;
+}
+.section-main {
+  background-color: #800020;
+  color:white
+}
+.section-tab {
+    padding: 20px;
+    border: 2px solid rgba(211, 211, 211, 0.44);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.14);
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+.section-footer{
+
 }
