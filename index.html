@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>src=js/scripts.js</script>
     <title>Document</title>
 </head>
 <body>
-    <div class  "container">
+    <div class  "jumbotron">
         <div class "header">
             <h1>Ping-Pong</h1>
         <div class "section-main">
@@ -19,10 +26,14 @@
                 <li>Numbers divisible by 5 bcome "pong"</li>
                 <li>Numbers divisible by 3 and 5 become "pingpong"</li>
             </ul>
-             <form action="" type="text"> Enter your number here:
-                 <input type="button" onclick="myFunction" value="Ping-Pong">
-             </form>
-            <div class "section-tab">
+            <form id="myForm" class="form-inline">
+                <div class="form-group">
+                    <label for=:"userInput">Enter any number:</label>
+                    <input type="text" id="userInput" placeholder="Enter number here">
+                    <button type ="submit" class= "btn btn-danger">Ping-Pong!</button>
+                </div>
+            </form>
+             <div class "section-tab">
                 <h4>About Ping-Pong</h4>
                 <p>Created by:</p>
                 <p> Kellen Njoroge </p>
