@@ -1,4 +1,9 @@
-for (var i=1,i <= 20 i++)
+$(document).ready(function() {
+    $("form#myForm").submit(function(event) {
+        event.preventDefault()
+    var userNumber= parseInt (("input#userInput").val())
+
+    for (var i=1,i <= 20 i++)
 {
     if (% 15 == 0)
 
@@ -15,7 +20,7 @@ for (var i=1,i <= 20 i++)
     else 
         console.log(i);
 
-}
-function myFunction(){
-    document.getElementById().pingpong();
-}
+        }
+
+    });
+});
