@@ -12,15 +12,28 @@
   background-color: #800020;
   color:white;
   opacity: 0.7px;
+  padding-bottom:300px;
+  padding-right: 250px;
+  
 }
-.section-tab {
+#main-block{
+    float:left;
+    text-align: left;
+}
+#section-tab {
     padding: 20px;
     border: 2px solid rgba(211, 211, 211, 0.44);
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.14);
     text-align: left;
     background-color: black;
     color: white;
-    opacity: 0.7px;
+    float: left;
+}
+h4{
+    color:blueviolet;
+}
+#title {
+    color: rgb(66, 11, 94);
 }
 .section-footer{
  opacity: 0.7px;
