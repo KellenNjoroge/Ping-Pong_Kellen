@@ -17,12 +17,20 @@
         
     <div class ="container-fluid">
         <div class ="main-section">
-        <a href="main.html">Home</a>
-         <h3>WELCOME!</h3>
+                <h1 id="karibu">WELCOME!</h1>
+            <button id="myButton" class="float-left submit-button" >Home</button>
+               <script type="text/javascript">
+                 document.getElementById("myButton").onclick = function () {
+                 location.href = "main.html";
+                  };
+            </script>
+         
          <video width="1000" height="840" controls>
             <source src="assets/pingpong-loop.mp4" type="video/mp4">
+                <object data="player.swf" type="application/x-shockwave-flash"> <param value="player.swf" name="gif"/> </object>
             Your browser does not support the video tag.
           </video> 
+         
         </div>
     </div>
 </body>

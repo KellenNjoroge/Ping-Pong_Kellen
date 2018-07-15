@@ -10,7 +10,7 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script>src="js/scripts.js"</script>
+    <script>src="js/scripts.js"></script>
     <title>Ping-Pong_Kellen</title>
 </head>
 <body>
@@ -19,10 +19,10 @@
             <h1>Ping-Pong</h1>
         </div>
         <div class="section-main">
-            <div id = "main-block">
+            <div class= "main-block">
             <h4>Let's Play!</h4>
             <h5>Rules:</h5>
-            Ping-Pong will count up to your number from 1 with the following ecxeption;
+            Ping-Pong will count up to your number from 1 with the following exception;
             <ul>
                 <li>Numbers divisible by 3 become "ping"</li>
                 <li>Numbers divisible by 5 bcome "pong"</li>
@@ -38,7 +38,7 @@
               <ol id="output">
              </ol>
             </div>
-            <div id="section-tab">
+            <div class="section-tab">
                <h4>About Ping-Pong</h4>
                 <p id="title">Created by:</p>
                 <p> Kellen Njoroge </p>
@@ -48,9 +48,16 @@
                 <p id="title">Level 2 Test for:</p>                
                 <p>java</p>           
             </div>
-            <div>
-                <h4>2018 | Kellen Njoroge</h4>
-            </div>
+            <button onclick="goBack()">Go Back</button>
+
+            <script>
+            function goBack() {
+            window.history.back();
+            }
+            </script>
+        </div>
+        <div class= "section-footer">
+            <h4>2018 | Kellen Njoroge</h4>
         </div>
     </div>
 </body>
