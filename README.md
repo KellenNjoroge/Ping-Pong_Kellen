@@ -3,7 +3,7 @@
 #### By Kellen Njoroge
 ## Description
  This project mainly expounds on ones skills in areas such as loops, functions for arrays such as for each and also one's styling capbility
-##Specifications
+## Specifications
 The project works quite easily...
 1.If a number is divisible by 3 it goes ping
 2.If a number is divible by 5 it goes pong
