@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $("form#myForm").click(function(event) {
         event.preventDefault();
-         var number= ("#number").val();
+         var number= $("#number").val();
          var result= parseInt(number);
          pingPong(result);
 
