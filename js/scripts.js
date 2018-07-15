@@ -11,28 +11,26 @@ $(document).ready(function() {
             });
         });
     });    
-
-
 // Business  Logic
     var numbersToBePingPonged = [];
-
-    function pingPong(result){
+     function pingPong(result){
         for (var i=1; i <= result; i++) {
 
-        if (i % 15 === 0){
+
+            if (i % 15 === 0){
             numbersToBePingPonged.push("pingPong");
-         }
-        else if (i % 3 === 0 ) {
+              }
+              else if (i % 3 === 0 ) {
 
             numbersToBePingPonged.push("ping");
-        }
-        else if (i % 5 === 0) {
+             }
+               else if (i % 5 === 0) {
 
             numbersToBePingPonged.push("pong");
-        }
-        else {
-        numbersToBePingPonged.push(i);
-        }
+            }
+             else {
+            numbersToBePingPonged.push(i);
+           }
         }  
     }
 

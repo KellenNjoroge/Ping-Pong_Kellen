@@ -1,8 +1,8 @@
 .container-fluid {
-    background-image:url("../assets/purple.jpg")
+    background-image:url("../assets/purple.jpg");
 }
 .main-section{
-    background-image:url("../assets/purple.jpg")
+    background-image:url("../assets/purple.jpg");
 }   
 .header{
     padding: 20px;
@@ -10,6 +10,7 @@
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.14);
     background-color: rgb(66, 11, 94);
     color:white;
+    text-align: center;
 }
 .section-main {
   background-color: #800020;
@@ -44,13 +45,10 @@ h4,h3{
     color: rgb(66, 11, 94);
 }
 .section-footer{
- opacity: 0.7px;
- padding: 20px;
- margin-right: -10%;
- border: 2px solid rgba(211, 211, 211, 0.44);
- box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.14);
- background-color: rgb(66, 11, 94);
- color:white;
- float:bottom;
- text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(211, 211, 211, 0.44);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.14);
+    background-color: rgb(66, 11, 94);
+    color:white;
+    text-align: center;
 }
