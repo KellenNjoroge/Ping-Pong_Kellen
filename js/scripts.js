@@ -1,29 +1,30 @@
 //User interface logic
 $(document).ready(function() {
-    $("form#myForm").submit(function(event) {
+    $("form#myForm").click(function(event) {
         event.preventDefault();
-         var number= parseInt (("input#formNumber").val());
-         pingPong(number);
+         var number= ("#number").val();
+         var result= parseInt(number);
+         pingPong(result);
 
-         numbersToBePingPonged.forEach(function(number){
-         $("#output").append("<li>"+ number + "<li>");
-         });
-    });
-});    
+            numbersToBePingPonged.forEach(function(result){
+            $("#output").append("<li>"+ result + "<li>");
+            });
+        });
+    });    
 
 
 // Business  Logic
     var numbersToBePingPonged = [];
 
-    function pingPong(number){
-        for (var i=1; i <= number; i++) {
+    function pingPong(result){
+        for (var i=1; i <= result; i++) {
 
-         if (i % 15 === 0){
+        if (i % 15 === 0){
             numbersToBePingPonged.push("pingPong");
          }
         else if (i % 3 === 0 ) {
 
-             numbersToBePingPonged.push("ping");
+            numbersToBePingPonged.push("ping");
         }
         else if (i % 5 === 0) {
 
@@ -32,8 +33,7 @@ $(document).ready(function() {
         else {
         numbersToBePingPonged.push(i);
         }
-        }
-         return numbersToBePingPonged;
-    }; 
+        }  
+    }
 
    
